@@ -23,11 +23,11 @@ export default function OtpScreen() {
         } else {
           // This case handles if the user somehow lands here without an email.
           Alert.alert("Error", "Could not find your email for verification. Please start over.");
-          router.replace('/(auth)/login');
+          router.replace('./login');
         }
       } catch (error) {
         Alert.alert("Error", "An unexpected error occurred. Please try again.");
-        router.replace('/(auth)/login');
+        router.replace('./login');
       } finally {
         setIsFetchingEmail(false);
       }

@@ -24,7 +24,7 @@ export default function LoginScreen() {
 
       Alert.alert('Success', 'A login code has been sent to your email.');
       
-      // Step 3: Navigate to the static OTP screen without exposing the email
+      // Step 3: Navigate to the static OTP screen using a relative path
       router.push('./otp');
 
     } catch (error: any) {
