@@ -15,7 +15,7 @@ const InitialLayout = () => {
 
     if (isAuthenticated && inAuthGroup) {
       // User is logged in but trying to access auth screens, redirect to main app
-      router.replace('/(tabs)/feed');
+      router.replace('./(tabs)/feed');
     } else if (!isAuthenticated && !inAuthGroup) {
       // User is not logged in and not in the auth flow, redirect to login
       router.replace('/(auth)/welcome');

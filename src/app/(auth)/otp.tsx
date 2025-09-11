@@ -23,18 +23,18 @@ export default function OtpScreen() {
         } else {
           // This case handles if the user somehow lands here without an email.
           Alert.alert("Error", "Could not find your email for verification. Please start over.");
-          router.replace('./login');
+          router.replace('./login'); // Use relative path
         }
       } catch (error) {
         Alert.alert("Error", "An unexpected error occurred. Please try again.");
-        router.replace('./login');
+        router.replace('./login'); // Use relative path
       } finally {
         setIsFetchingEmail(false);
       }
     };
 
     fetchEmail();
-  }, []);
+  }, [router]);
 
   const handleVerifyOtp = async () => {
     if (!email) {
