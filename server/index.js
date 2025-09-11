@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import authRoutes from './routes/auth.js';
+import profileRoutes from './routes/profile.js';
 
 // --- Basic Setup ---
 dotenv.config();
