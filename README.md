@@ -1,53 +1,76 @@
-# Raydius
-Connect exclusively within your campus.
+<div align="center">
 
-Raydius is a closed-community dating application designed for university students. It combines the discoverability of Happn, the depth of Hinge, and the simplicity of Tinder, all within a secure, university-only environment.
+<h1 align="center">Raydius</h1>
+
+<p align="center">
+Connect exclusively within your campus.
+<br />
+<a href="#about-the-project"><strong>Explore the docs »</strong></a>
+<br />
+<br />
+<a href="https://www.google.com/search?q=https://github.com/your-username/raydius/issues">Report Bug</a>
+·
+<a href="https://www.google.com/search?q=https://github.com/your-username/raydius/issues">Request Feature</a>
+</p>
+</div>
+
+[][license-url]
+[][linkedin-url]
+
+<!-- TABLE OF CONTENTS -->
+
+<details>
+<summary>Table of Contents</summary>
+<ol>
+<li>
+<a href="#about-the-project">About The Project</a>
+<ul>
+<li><a href="#built-with">Built With</a></li>
+</ul>
+</li>
+<li>
+<a href="#getting-started">Getting Started</a>
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#installation--setup">Installation & Setup</a></li>
+</ul>
+</li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#contact">Contact</a></li>
+</ol>
+</details>
 
 About The Project
-This project is a full-stack mobile application built with a modern tech stack. The goal is to provide a safe, relevant, and engaging platform for students to make genuine connections with peers they cross paths with every day on campus.
+Raydius is a closed-community dating application designed exclusively for university students. It combines the discoverability of Happn, the depth of Hinge, and the simplicity of Tinder, all within a secure, university-only environment.
+
+The goal is to provide a safe, relevant, and engaging platform for students to make genuine connections with peers they cross paths with every day on campus.
 
 Core Features:
 
-Email Domain Verification: Ensures exclusivity by allowing sign-ups only from whitelisted university email domains.
+✅ University Domain Verification: Ensures exclusivity by allowing sign-ups only from whitelisted university email domains.
 
-OTP Authentication: Secure, passwordless login using one-time codes sent to the user's university email.
+🔑 Secure OTP Authentication: Passwordless login using one-time codes sent directly to the user's university email.
 
-Profile Creation: Users can build a detailed profile with photos, personal information, interests, and ice-breaker prompts.
+👤 In-Depth Profile Creation: Users can build a detailed profile with photos, personal information, interests, and ice-breaker prompts.
 
-Swiping & Matching: A familiar card-swiping interface to like or pass on profiles, with mutual likes resulting in a match.
+❤️‍🔥 Swiping & Matching: A familiar card-swiping interface to like or pass on profiles, with mutual likes resulting in a match.
 
-Real-time Chat: Once matched, users can communicate through a private chat.
+💬 Real-time Chat: Once matched, users can communicate through a private, secure chat.
 
-Tech Stack
-This project is built with the following technologies:
+Built With
+This project is built with a modern, full-stack JavaScript/TypeScript toolchain.
 
-Backend (Node.js)
+[][ReactNative-url]
 
-Framework: Express.js
+[][Expo-url]
 
-Database: MongoDB with Mongoose
+[][Node.js-url]
 
-Authentication: JSON Web Tokens (JWT) & bcryptjs for hashing
+[][Express.js-url]
 
-Validation: Joi
-
-Email Service: Nodemailer
-
-File Storage: AWS S3 for photo uploads (planned)
-
-Frontend (React Native)
-
-Framework: Expo (with Expo Router)
-
-Language: TypeScript
-
-Navigation: Expo Router
-
-State Management: React Context
-
-HTTP Client: Axios
-
-UI: React Native core components
+[][MongoDB-url]
 
 Getting Started
 To get a local copy up and running, follow these steps.
@@ -55,13 +78,13 @@ To get a local copy up and running, follow these steps.
 Prerequisites
 Make sure you have the following software installed on your machine:
 
-Node.js (LTS version recommended)
+Node.js: Download Node.js (LTS version recommended)
 
-MongoDB Atlas Account (for the database)
+MongoDB: A MongoDB Atlas Account for the database.
 
-An SMTP service for sending emails (e.g., SendGrid or a test service like Ethereal)
+SMTP Service: An email service for sending OTPs (e.g., SendGrid or a test service like Ethereal).
 
-Expo Go App on your mobile device for testing.
+Expo Go: The Expo Go App on your mobile device for testing.
 
 Installation & Setup
 Clone the repository:
@@ -77,8 +100,7 @@ cd server
 # Install NPM packages
 npm install
 
-# Create a .env file from the example
-# (You will need to fill this with your own credentials)
+# Create a .env file (fill with your own credentials)
 cp .env.example .env
 
 # Start the backend server
@@ -100,7 +122,7 @@ npx expo start
 Scan the QR code with the Expo Go app on your phone.
 
 Environment Variables
-You will need to create a .env file in the server/ directory and add the following variables. These are essential for the backend to function correctly.
+You will need to create a .env file in the server/ directory and add the following variables.
 
 # Server Port
 PORT=4000
@@ -121,6 +143,21 @@ SMTP_USER="your-smtp-user"
 SMTP_PASS="your-smtp-password"
 MAIL_FROM="Raydius <no-reply@raydius.app>"
 
+Roadmap
+[x] User Authentication with OTP
+
+[x] Profile Creation & Management
+
+[ ] Swiping & Matching Logic
+
+[ ] Real-time Chat with Socket.IO
+
+[ ] Geolocation-based "Crossed Paths" Feature
+
+[ ] User Settings (Discovery, Notifications, etc.)
+
+See the open issues for a full list of proposed features (and known issues).
+
 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
@@ -139,3 +176,25 @@ Open a Pull Request
 
 License
 Distributed under the MIT License. See LICENSE.txt for more information.
+
+Contact
+Your Name - @your_twitter - email@example.com
+
+Project Link: https://github.com/your-username/raydius
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[]: #
+[license-url]: https://www.google.com/search?q=https://github.com/your-username/raydius/blob/main/LICENSE.txt
+[]: #
+[linkedin-url]: https://www.google.com/search?q=https://linkedin.com/in/your-linkedin
+[]: #
+[reactnative-url]: https://reactnative.dev/
+[]: #
+[expo-url]: https://expo.dev/
+[]: #
+[node.js-url]: https://nodejs.org/
+[]: #
+[express.js-url]: https://expressjs.com/
+[]: #
+[mongodb-url]: https://www.mongodb.com/
